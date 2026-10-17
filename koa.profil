@@ -4,7 +4,7 @@
   "nom": "koa-recette-a",
   "base": "debian",
   "utilisateur": "agent",
-  "paquets": ["make"],
+  "paquets": ["make", "python3"],
   "bootstrap": "bootstrap.sh",
   "repertoire": "~/profile",
   "agent": {
