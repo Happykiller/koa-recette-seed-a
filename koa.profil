@@ -1,0 +1,19 @@
+{
+  // Seed de recette de KoA (plan 112, R1) : jetable. Un agent qui ne fait rien de coûteux.
+  "version": 1,
+  "nom": "koa-recette-a",
+  "base": "debian",
+  "utilisateur": "agent",
+  "paquets": ["make"],
+  "bootstrap": "bootstrap.sh",
+  "repertoire": "~/profile",
+  "agent": {
+    "nature": "claude",
+    "mode": "bypassPermissions",
+    "modele": "haiku",
+    "consigne": "Lis CLAUDE.md, puis fais ce qu'il demande."
+  },
+  "secrets": {
+    "RECETTE": { "requis": true }
+  }
+}
